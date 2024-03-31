@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.de.undercouch.gradle.tasks.download.org.apache.commons.logging.LogFactory.release
-
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -38,6 +36,21 @@ android {
     }
 }
 
+
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.shaykhshaya"
+                artifactId = "request-get"
+                version = "1.0"
+            }
+        }
+    }
+}
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
@@ -49,6 +62,11 @@ dependencies {
 
     implementation("com.google.code.gson:gson:2.9.0")
 }
+
+
+
+
+
 
 
 
