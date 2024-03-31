@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">NetworkSdk</string>
+    <string name="label_json_response">Json Response</string>
+</resources>
