@@ -45,7 +45,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.shaykhshaya"
                 artifactId = "request-get"
-                version = "1.0"
+                version = "1.1"
             }
         }
     }
