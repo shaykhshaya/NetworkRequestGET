@@ -71,5 +71,5 @@ dependencies {
 
     implementation("com.google.code.gson:gson:2.9.0")
 
-    implementation(project(":request-get"))
+    implementation("com.github.shaykhshaya:NetworkRequestGET:1.1")
 }
